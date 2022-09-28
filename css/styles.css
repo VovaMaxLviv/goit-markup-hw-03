@@ -27,7 +27,8 @@ ul{
     justify-content: space-between;
     display: flex;
     align-items: center;
-
+    height: 80px;
+    border-bottom: 10px;
 }
 .webstudio {
     font-family: 'Raleway', sans-serif;
@@ -37,14 +38,16 @@ ul{
     line-height: 31px;
     text-decoration: none;
 }
-
+.headertext{
+    display: flex;
+    justify-content: space-between;
+    
+}
 .headertext :hover{
     color: #2196f3;
 }
 .headertext ul,li,a{
     text-decoration: none;
-    display: flex;
-    justify-content: space-between;
 }
 
 .web {
@@ -52,7 +55,12 @@ ul{
 }
 .black{
     color: var(--main-color);
+    font-weight: 500;
     font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding: 25px;
+    margin: auto;
 }
 
 .bisnes {
@@ -117,13 +125,13 @@ ul{
     text-transform: uppercase;
 }
 .text p{
-    
+    display: flex;
 }
 .work-page{
     display: flex;
 }
 .note{
-    padding: 30px;
+    padding: 15px;
 }
 .comand{
     background-color: #f5f4fa;
@@ -211,13 +219,14 @@ ul{
 .makerss{
     display: block;
 }
-.makers h1{
+/*.makers h2{
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
     color: #212121;
-}
+    display: flex;
+}*/
 .makers p{
     font-size: 16px;
     line-height: 30px;
