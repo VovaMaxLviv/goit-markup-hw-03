@@ -15,7 +15,7 @@ body {
     --white : white;
     }
 section{
-    padding: 0px 215px;
+    padding: 94px 215px;
     margin: auto;
 }
 ul{
@@ -29,6 +29,7 @@ ul{
     align-items: center;
     height: 80px;
     border-bottom: 10px;
+    padding: 0px 215px;
 }
 .webstudio {
     font-family: 'Raleway', sans-serif;
@@ -123,6 +124,7 @@ ul{
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: left;
 }
 .text p{
     display: flex;
@@ -176,6 +178,18 @@ ul{
     color: var(--white);
     text-align: left;
     display: list-item;
+    height: 252px;
+    padding-top: 60px;
+}
+.headerte {
+    padding-top: 20px;
+}
+.headerte :hover {
+    color: #2196f3;
+}
+
+.headerte ul,li,a {
+    text-decoration: none;
 }
 .google {
     color: var(--white);
@@ -184,6 +198,8 @@ ul{
     color: var(--white);
 }
 .gray{
+    line-height: 24px;
+    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 00.06);
 }
 /*-------------Potrfolio-------------------------*/
@@ -192,7 +208,7 @@ ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 94px 0px 0px 0px;
+    /*padding: 94px 0px 0px 0px;*/
 }
 .buttonp{
     height: 38px;
@@ -200,33 +216,28 @@ ul{
     border-radius: 4px;
     margin: 15px;
     padding: auto;
+    flex-grow: 2;
 }
 .buttonp:hover{
     background-color: var(--blu);
     color: var(--white);
 }
-.ass {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 .makers{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 50px 0px;
+    padding: 50px 0px 0px 0px;
+    text-align: left;
+    
+
 }
 .makerss{
     display: block;
+    border: 1px solid #EEEEEE;
+    background-color: fff;
+    margin: 7.5px;
 }
-/*.makers h2{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: #212121;
-    display: flex;
-}*/
+
 .makers p{
     font-size: 16px;
     line-height: 30px;
