@@ -1,11 +1,10 @@
 body {    
-    width: 1600px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     text-align: center;
     text-decoration: none;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     color: var(--main-color);
 }
 
@@ -23,6 +22,7 @@ ul{
     margin: 0px;
     padding: 0px;
 }
+/*---HEADER---*/
 .header{
     justify-content: space-between;
     display: flex;
@@ -37,6 +37,7 @@ ul{
     letter-spacing: 0.03em;
     font-size: 26px;
     line-height: 31px;
+    color: var(--main-color);
 }
 .headertext{
     display: flex;
@@ -44,14 +45,14 @@ ul{
     
 }
 .headertext :hover{
-    color: #2196f3;
+    color: var(--blu);
 }
 .headertext ul,li,a{
     text-decoration: none;
 }
 
 .web {
-    color: #2196f3;
+    color: var(--blu);
 }
 .black{
     color: var(--main-color);
@@ -63,11 +64,34 @@ ul{
     margin: auto;
 }
 
+.info{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    margin: 25px;
+}
+
+.black:hover,
+.info:hover {
+    color: var(--blu);
+}
+
+.black:focus,
+.info:focus {
+    color: var(--blu);
+}
+.current {
+    color: var(--blu);
+}
+/*------MAIN-----*/
 .bisnes {
     height: 200px;
     left: 0px;
     top: 80px;
-    color: white;
+    color: var(--white);
     background-color: #2f303a;
     justify-content: center;
     padding: 200px 0px; 
@@ -76,15 +100,14 @@ ul{
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-        /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .button {
     color: black;
-    background-color: #2196f3;
+    background-color: #188CE8;
     width: 216px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 15);
@@ -92,7 +115,9 @@ ul{
     border: none;
     cursor: pointer;
 }
-
+.button:hover{
+    background-color: var(--blu);
+}
 .but{
     font-weight: 700;
     font-size: 16px;
@@ -102,10 +127,10 @@ ul{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .work{
-    background-color: #FFFFFF;
+    background-color: var(--white);
     display: block;
 }
 
@@ -122,6 +147,7 @@ ul{
 }
 .work-page{
     display: flex;
+    justify-content: center;
 }
 .note{
     padding: 15px;
@@ -130,15 +156,11 @@ ul{
     background-color: #f5f4fa;
     font-size: 14px;
     height: 648px;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .comand-one {
     width: 270px;
     height: 368px;
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 15px;
@@ -162,7 +184,7 @@ ul{
     letter-spacing: 0.03em;
     color: #757575;
 }
-
+/*----FOOTER---*/
 .footer{
     background-color: #2F303A;
     color: var(--white);
@@ -175,22 +197,36 @@ ul{
     padding-top: 20px;
 }
 .headerte :hover {
-    color: #2196f3;
+    color: var(--blu);
 }
 
 .headerte ul,li,a {
     text-decoration: none;
 }
 .google {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
     color: var(--white);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.google:hover {
+    color: var(--blu);
 }
 .footer .webstudio {
     color: var(--white);
 }
-.gray{
+.info-footer{
+    font-weight: 400;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 00.06);
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0px;
+    text-decoration: none;
+    font-style: normal;
 }
 /*-------------Potrfolio-------------------------*/
 
@@ -198,42 +234,56 @@ ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /*padding: 94px 0px 0px 0px;*/
 }
-.buttonp{
-    height: 38px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    margin: 15px;
-    padding: auto;
-    flex-grow: 2;
+.buttonp {
     cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin: 4px;
 }
-.buttonp:hover{
+.buttonp:hover,
+.buttonp:focus {
     background-color: var(--blu);
     color: var(--white);
 }
+
 .makers{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px 0px 0px 0px;
     text-align: left;
-    
-
 }
+
 .makerss{
     display: block;
     border: 1px solid #EEEEEE;
     background-color: fff;
     margin: 7.5px;
+    box-sizing: border-box;
 }
-
+.makers h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+    margin: 20px 0px 4px 24px;
+}
 .makers p{
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: #757575;
+    margin: 0px 0px 0px 24px;
 }
 
 
