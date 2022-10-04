@@ -303,7 +303,7 @@ ul{
     color: var(--white);
 }
 main .countainer {
-    padding-top: 54px;
+    padding: 94px 0px 94px 0px;
 }
 .makers{
     display: flex;
