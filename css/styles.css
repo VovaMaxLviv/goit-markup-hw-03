@@ -13,23 +13,28 @@ body {
     --blu : #2196f3;
     --white : white;
     }
-section{
-    padding: 94px 215px;
-    margin: auto;
-}
+
 ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
+.countainer{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 215px;
+}
+
 /*---HEADER---*/
 .header{
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
     height: 80px;
-    border-bottom: 10px;
-    padding: 0px 215px;
+}
+.header .countainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
 }
 .webstudio {
     font-family: 'Raleway', sans-serif;
@@ -62,6 +67,7 @@ ul{
     letter-spacing: 0.02em;
     padding: 25px;
     margin: auto;
+    font-style: normal;
 }
 
 .info{
@@ -72,6 +78,7 @@ ul{
     color: #212121;
     text-decoration: none;
     margin: 25px;
+    font-style: normal;
 }
 
 .black:hover,
@@ -88,17 +95,23 @@ ul{
 }
 /*------MAIN-----*/
 .bisnes {
-    height: 200px;
+    height: 600px;
     left: 0px;
     top: 80px;
     color: var(--white);
     background-color: #2f303a;
     justify-content: center;
-    padding: 200px 0px; 
+}
+.bisnes .countainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
 }
 .efect{
     font-weight: 900;
-    font-size: 44px;
+    font-size: 40px;
     line-height: 60px;
     text-align: center;
     letter-spacing: 0.06em;
@@ -133,21 +146,49 @@ ul{
     background-color: var(--white);
     display: block;
 }
-
+.work h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-top: 94px;
+    margin-top: 0px;
+}
 .text{
     display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-align: left;
+}
+.text h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: left;
+    color: #212121;
 }
 .text p{
-    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.mum{
+    width: 270px;
+    margin: 15px;
 }
 .work-page{
     display: flex;
     justify-content: center;
+    margin-bottom: 79px;
 }
 .note{
     padding: 15px;
@@ -156,6 +197,9 @@ ul{
     background-color: #f5f4fa;
     font-size: 14px;
     height: 648px;
+}
+.comand .countainer{
+    padding-top: 94px;
 }
 .comand-one {
     width: 270px;
@@ -176,6 +220,8 @@ ul{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
+    margin: 0px;
+    padding-bottom: 35px;
 }
 .comand p{
     font-size: 16px;
@@ -190,7 +236,9 @@ ul{
     color: var(--white);
     text-align: left;
     display: list-item;
-    height: 98px;
+    height: 252px;
+}
+.footer .countainer{
     padding-top: 60px;
 }
 .headerte {
@@ -254,7 +302,9 @@ ul{
     background-color: var(--blu);
     color: var(--white);
 }
-
+main .countainer {
+    padding-top: 54px;
+}
 .makers{
     display: flex;
     justify-content: space-between;
