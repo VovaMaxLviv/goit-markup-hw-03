@@ -10,14 +10,14 @@ body {
 }
 
 :root{
-    --main-color : #black;
+    --main-color : #212121;
     --blu : #2196f3;
     --white : white;
     }
 
 
 .container{
-    max-width: 1200px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 15px;
@@ -28,7 +28,7 @@ body {
     padding: 0px;
     list-style-type: none;
 }
-/*---HEADER---*/
+/*---------------------HEADER-----------*/
 .header{
     height: 80px;
 }
@@ -44,7 +44,7 @@ body {
     letter-spacing: 0.03em;
     font-size: 26px;
     line-height: 31px;
-    color: var(--main-color);
+    color: #000000;
 }
 .headertext{
     display: flex;
@@ -75,7 +75,7 @@ body {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #757575;
     text-decoration: none;
     margin: 25px;
     font-style: normal;
@@ -93,7 +93,7 @@ body {
 .current {
     color: var(--blu);
 }
-/*------MAIN-----*/
+/*----------------------MAIN----------------*/
 .bisnes {
     height: 600px;
     left: 0px;
@@ -121,7 +121,6 @@ body {
     margin: auto;
 }
 .button {
-    color: black;
     background-color: var(--blu);
     width: 216px;
     height: 50px;
@@ -147,18 +146,17 @@ body {
 .work{
     background-color: var(--white);
     display: block;
+    padding: 94px 0px;
 }
+
 .work h2{
-    color: var(--white);
-}
-.work h3{
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-color);
     padding-top: 94px;
     margin-top: 0px;
 
@@ -166,7 +164,6 @@ body {
 .text{
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
     text-align: left;
 }
 .text h3{
@@ -176,7 +173,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: left;
-    color: #212121;
+    color:  var(--main-color);
     margin-bottom: 10px;
 }
 .text p{
@@ -218,6 +215,9 @@ body {
     justify-content: space-between;
     display: flex;
 }
+.comands{
+    padding: 30px 0px;
+}
 .comand h2{
     font-weight: 700;
     font-size: 36px;
@@ -232,7 +232,16 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
 }
-/*----FOOTER---*/
+.comand h3{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+/*---------------FOOTER--------------------*/
 .footer{
     background-color: #2F303A;
     color: var(--white);
@@ -273,33 +282,62 @@ body {
     color: rgba(255, 255, 255, 0.6);
     margin: 0px;
     text-decoration: none;
-/*-------------Potrfolio-------------------------*/
+}
+/*--------------Potrfolio-----------------*/
+
+.direction .container {
+    padding: 94px 0px;
+}
 
 .buttons{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.buttonp {
+    text-align: center;
     cursor: pointer;
+    align-items: center;
+}
+
+.buttonp {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
-    background-color: #F5F4FA;
-    border-radius: 4px;
+    color:  var(--main-color);
     margin: 4px;
+    border: none;
 }
+.button1 {
+    width: 73px;
+    height: 38px;
+}
+.button2 {
+    width: 125px;
+    height: 38px;
+}
+.button3 {
+    width: 112px;
+    height: 38px;
+}
+.button4 {
+    width: 103px;
+    height: 38px;
+}
+.button5 {
+    width: 130px;
+    height: 38px;    
+}
+
 .buttonp:hover,
 .buttonp:focus {
     background-color: var(--blu);
     color: var(--white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
-/*main .container {
-    padding: 94px 0px 94px 0px;
-}*/
+
+
 .makers{
     display: flex;
     justify-content: space-between;
@@ -311,7 +349,7 @@ body {
 .makerss{
     display: block;
     border: 1px solid #EEEEEE;
-    background-color: fff;
+    background-color: var(--white);
     margin: 7.5px;
     box-sizing: border-box;
 }
@@ -320,7 +358,7 @@ body {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--main-color);
 }
 .makers p{
     font-size: 16px;
@@ -328,7 +366,9 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
 }
-.text-maker{
+.textmaker{
+    width: 320px;
+    height: 70px;
     padding: 24px 20px;
 }
 img {
@@ -337,7 +377,7 @@ img {
     height: auto;
 }
 
-/*my study
+/*my study-------------------------------------------------------------------------------
 background-image: linear-gradient(to right, #553c9a, #ee4b2b, #00c2cb, #ff7f50, #553c9a);
 background-size: 200%;
 background-position: -200%;
