@@ -99,7 +99,6 @@ section{
 }
 /*----------------------MAIN----------------*/
 .bisnes {
-    height: 600px;
     left: 0px;
     top: 80px;
     color: var(--white);
@@ -111,7 +110,8 @@ section{
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-    padding-top: 200px;
+    justify-content: center;
+    padding: 106px 0px;
 }
 .efect{
     font-weight: 900;
