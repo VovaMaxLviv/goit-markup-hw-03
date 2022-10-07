@@ -22,7 +22,7 @@ body {
     margin-right: auto;
     margin: 0 auto;
 }
-section{
+.section{
     padding: 94px 0px;
 }
 *{
@@ -169,7 +169,7 @@ section{
     justify-content: space-between;
     text-align: left;
 }
-.text h3{
+.mum h3{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -179,13 +179,19 @@ section{
     color:  var(--main-color);
     margin-bottom: 10px;
 }
-.text p{
+.mum p{
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
 }
 .mum{
     width: 270px;
+}
+.section .work{
+    padding-top: 0px;
+}
+.work{
+    padding-top: 0px;
 }
 .work h2{
     font-weight: 700;
