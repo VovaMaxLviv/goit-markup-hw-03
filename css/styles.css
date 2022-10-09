@@ -30,6 +30,11 @@ body {
     padding: 0px;
     list-style-type: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /*---------------------HEADER-----------*/
 /*.header{
     height: 80px;
@@ -141,6 +146,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white);
+    font-family: inherit;
 }
 .button:hover{
     background-color: #188CE8;
@@ -385,11 +391,8 @@ body {
     
     padding: 24px 20px;
 }
-/*img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}*/
+
+
 
 /*my study-------------------------------------------------------------------------------
 background-image: linear-gradient(to right, #553c9a, #ee4b2b, #00c2cb, #ff7f50, #553c9a);
